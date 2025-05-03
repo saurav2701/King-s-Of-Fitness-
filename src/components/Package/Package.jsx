@@ -81,17 +81,7 @@ const Package = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }}
         />
-        <motion.p
-          variants={fadeinAnimate}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.8 }}
-        >
-          Create a captivating fitness website with our all-inclusive package.
-          Customize your sleek template, engage users with interactive videos,
-          schedule classes, and share valuable content. It's time to inspire and
-          motivate your audience with our mobile-responsive solution.
-        </motion.p>
+
         <IconContext.Provider value={{ size: "2.5em" }}>
           <div className={packageclasses["package-card__info"]}>
             <PackageCardMotion
