@@ -1,0 +1,35 @@
+.locationSection {
+	padding: 3rem 1.5rem;
+
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	/* Adjust the font size */
+	font-weight: 600;
+	font-family: poppins, sans-serif;
+	/* Make the text bold */
+	/* Set a dark color for contrast */
+	text-align: center;
+	/* Center the text */
+	margin-bottom: 1rem;
+	/* Add spacing below the title */
+	display: flex;
+	/* Use flexbox for alignment */
+	align-items: center;
+	/* Vertically align the icon and text */
+	justify-content: center;
+	/* Horizontally center the content */
+	gap: 0.5rem;
+	/* Add spacing between the icon and text */
+}
+
+.mapWrapper {
+	max-width: 90%;
+	margin: 0 auto;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+}

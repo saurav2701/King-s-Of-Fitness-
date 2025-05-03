@@ -1,0 +1,239 @@
+aside {
+	width: 100%;
+	min-width: 60%;
+	padding: 2rem 0;
+	/* background-color: #f9f9f9; */
+	/* Light background for better contrast */
+}
+
+.fitness-image__wrapper {
+	padding: 5% 10%;
+	width: 80%;
+	height: 100%;
+	min-height: 88vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 5em;
+	background-image: url('../../assets/kofphoto.jpg');
+	/* Use the image as background */
+	background-size: cover;
+	background-position: center;
+	border-radius: none;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	/* Add subtle shadow */
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 1.5em auto;
+	font-size: 3.5rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	line-height: 1.2;
+	color: white;
+	/* Darker text for better readability */
+}
+
+.title p {
+	margin: 0.5em 0;
+}
+
+.title-italic {
+	font-style: italic;
+	color: white;
+	/* Slightly lighter color for emphasis */
+}
+
+.element {
+	position: absolute;
+	right: 28%;
+	top: 6%;
+	z-index: -1;
+	width: 100px;
+	height: 100px;
+	background-color: #e0e0e0;
+	/* Placeholder background */
+	border-radius: 50%;
+}
+
+/* .fitness-image__wrapper {
+	width: 100%;
+	min-height: 88vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 5em;
+} */
+
+.fitness-image {
+	width: 80%;
+	height: 90rem;
+	border-radius: 280px;
+	border: 5px solid #ddd;
+	/* Subtle border for better focus */
+	object-fit: cover;
+	object-position: center center;
+	margin-top: 2.8rem;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	/* Add subtle shadow */
+}
+
+.fitness-text__wrapper {
+	width: 80%;
+	height: 15rem;
+	position: absolute;
+	top: 55%;
+	border-radius: 280px;
+	background-color: #464646;
+	color: #a6a6a6;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	z-index: -1;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	/* Add shadow for depth */
+}
+
+.fitness-text__wrapper p {
+	margin: 0;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.btn-scroll__arrow:hover {
+	animation: arrow-animation infinite 1s ease-out;
+	cursor: pointer;
+}
+
+@keyframes arrow-animation {
+	0% {
+		transform: translateY(0em);
+	}
+
+	50% {
+		transform: translateY(-0.25em);
+	}
+
+	100% {
+		transform: translateY(0em);
+	}
+}
+
+/* Responsive Design */
+@media (max-width: 580px) {
+	.title {
+		font-size: 2.75rem;
+		padding: 0.5em;
+		margin: 1rem;
+	}
+
+	.element {
+		width: 70px;
+		height: 70px;
+		right: 30%;
+		top: 0;
+	}
+
+	.fitness-image {
+		height: 13.5rem;
+		border-radius: 100px;
+		margin-top: 2.4rem;
+	}
+
+	.fitness-text__wrapper {
+		width: 90%;
+		height: 10rem;
+		top: 45%;
+		border-radius: 100px;
+		padding: 0.5em;
+	}
+}
+
+@media (min-width: 581px) and (max-width: 766px) {
+	.title {
+		font-size: 2.9rem;
+		padding: 0.5em;
+		margin: 2rem;
+	}
+
+	.element {
+		width: 70px;
+		height: 70px;
+		right: 42%;
+		top: 0;
+	}
+
+	.fitness-image {
+		height: 13.5rem;
+		border-radius: 100px;
+		margin-top: 2.4rem;
+	}
+
+	.fitness-text__wrapper {
+		width: 90%;
+		height: 10rem;
+		top: 45%;
+		border-radius: 100px;
+		padding: 0.5em;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+	.title {
+		font-size: 4.75rem;
+		padding: 0.5em;
+		margin: 4rem;
+	}
+
+	.element {
+		width: 90px;
+		height: 90px;
+		right: 30%;
+		top: 5%;
+	}
+
+	.fitness-image {
+		height: 24rem;
+		margin-top: 2.4rem;
+	}
+
+	.fitness-text__wrapper {
+		height: 18rem;
+		top: 45%;
+		border-radius: 200px;
+		padding: 1em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.title {
+		font-weight: 500;
+		font-size: 5rem;
+		padding: 0.6em 1.5em;
+		margin: 1rem;
+	}
+
+	.element {
+		width: 120px;
+		height: 120px;
+		right: 48%;
+		top: 8%;
+	}
+
+	.fitness-image {
+		height: 25rem;
+	}
+
+	.fitness-text__wrapper {
+		height: 20rem;
+		padding: 1.5em;
+	}
+}
