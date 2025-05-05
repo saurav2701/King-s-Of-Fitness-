@@ -66,7 +66,7 @@ const Package = () => {
 	return (
     <aside className={packageclasses["package-wrapper"]}>
       <div id="package" className={packageclasses["package-info__div"]}>
-        {/* <motion.h3
+        <motion.h3
           variants={mainTitleAnimation}
           initial="hidden"
           whileInView="visible"
@@ -80,7 +80,7 @@ const Package = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }}
-        /> */}
+        />
 
         <IconContext.Provider value={{ size: "2.5em" }}>
           <div className={packageclasses["package-card__info"]}>
