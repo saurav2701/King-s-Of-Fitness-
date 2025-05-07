@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero/Hero';
 import Services from './components/Services/Services';
 import Package from './components/Package/Package';
 import Contact from './components/Contact/Contact'; 
 import Gymlocation from './components/Location/Gymlocation';
+import Building from './components/Building/Building'; 
 
 function App() {
 	const [showPopup, setShowPopup] = useState(true);
@@ -15,7 +15,7 @@ function App() {
 
 	return (
 		<React.Fragment>
-			{/* Popup Image */}
+			{/*  */}
 			{showPopup && (
 				<div style={{
 					position: 'fixed',
@@ -56,7 +56,7 @@ function App() {
 			)}
 
 			<Navbar />
-			<Hero /> 
+			<Building/>
 			<Services />
 			<Package />
 			<Contact />

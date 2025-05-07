@@ -1,5 +1,5 @@
 import React from "react";
-import heroclasses from "./Hero.module.css";
+import heroclasses from "./Building.module.css";
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 
@@ -64,3 +64,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
